@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Foodie's Restaurant</title>
+
+    <link rel="stylesheet" href="contact.css" />
+</head>
+<script>
+const params = new URLSearchParams(window.location.search);
+  if(params.get('status') === 'success') {
+    alert('Message sent! We will get back to you soon.');
+  }
+</script>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Foodie's Restaurant</h1>
+
+        <div class="dropdown">
+        <a href="../home/index.html">Home</a>
+        
+            <button class="dropbtn">Menu ▼</button>
+            <div class="dropdown-content">
+                <a href="../Starter/Starter.html">Starter</a>
+                <a href="../MainCourse/MainCourse.html">Main Course</a>
+                <a href="../Dessert/Dessert.html">Dessert</a>
+            </div>
+        <a href="../about/about.html">About</a>
+        <a href="../contact/contact.html">Contact</a>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+
+        <div class="contact-box">
+
+            <h2>Contact Us</h2>
+
+            <form action="../backend/contact.php" method="POST">
+
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Message</label>
+                    <textarea name="message" placeholder="Write your message"></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Foodie's Restaurant | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

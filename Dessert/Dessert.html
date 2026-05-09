@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dessert.css" />
+    <title>Dessert</title>
+</head>
+<body>
+    <header>
+        <h1>Dessert</h1>
+        <div class="dropdown">
+        <a href="../home/index.html">Home</a>
+        
+            <button class="dropbtn">Menu ▼</button>
+            <div class="dropdown-content">
+                <a href="../Starter/Starter.html">Starter</a>
+                <a href="../MainCourse/MainCourse.html">Main Course</a>
+                <a href="../Dessert/Dessert.html">Dessert</a>
+            </div>
+        <a href="../payment/cart.html">Cart</a>
+        <a href="../about/about.html">About</a>
+        <a href="../contact/contact.html">Contact</a>
+        </div>
+    </header>
+    <section class="container">
+        <div class="card">
+            <img src="https://www.cadburydessertscorner.com/hubfs/dc-website-2022/articles/soft-gulab-jamun-recipe-for-raksha-bandhan-from-dough-to-syrup-all-you-need-to-know/soft-gulab-jamun-recipe-for-raksha-bandhan-from-dough-to-syrup-all-you-need-to-know.webp" alt="">
+            <h2 class="item_name">Gulab Jamun</h2>
+            <p>Rs</p><p class="price">150</p>
+            <div class="cart-container">
+                <button class="buy-btn" onclick="showCounter(this)">Buy Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7G1lD8DspWh8u2SYCcAoWLsCBVFz_XRKrZg&s" alt="">
+            <h2 class="item_name">Rasmalai</h2>
+            <p>Rs</p><p class="price">180</p>
+            <div class="cart-container">
+                <button class="buy-btn" onclick="showCounter(this)">Buy Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://static.toiimg.com/thumb/54715143.cms?imgsize=50348&width=800&height=800" alt="">
+            <h2 class="item_name">Kulfi</h2>
+            <p>Rs</p><p class="price">120</p>
+            <div class="cart-container">
+                <button class="buy-btn" onclick="showCounter(this)">Buy Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD12OCxU4Th3aX7Mj3vPBcnVJEf5WhIAzWEQ&s" alt="">
+            <h2 class="item_name">Jalebi</h2>
+            <p>Rs</p><p class="price">150</p>
+            <div class="cart-container">
+                <button class="buy-btn" onclick="showCounter(this)">Buy Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.hindustantimes.com/ht-img/img/2025/02/04/original/Mysore_Pak_1738674801462.webp" alt="">
+            <h2 class="item_name">Mysore Pak</h2>
+            <p>Rs</p><p class="price">200</p>
+            <div class="cart-container">
+                <button class="buy-btn" onclick="showCounter(this)">Buy Now</button>
+            </div>
+        </div>
+        </section>
+        <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    <footer id="contact">
+         <p>© 2026 Foodie's Restaurant | All Rights Reserved</p>
+    </footer>
+    <script src="Dessert.js"></script>
+   
+</body>
+</html>
