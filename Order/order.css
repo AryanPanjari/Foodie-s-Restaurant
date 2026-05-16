@@ -5,29 +5,23 @@
 }
 
 /* Full Page */
-body{
-
-    background:#1bad47;
-
-    font-family:Georgia, serif;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    min-height:100vh;
-
-    padding:40px;
-    
-    margin:0;
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-
-}
-main{
+body {
+    background: #1bad47;
+    font-family: Georgia, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}main{
     flex:1;
 }
 /* Main Container */
